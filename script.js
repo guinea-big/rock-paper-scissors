@@ -1,6 +1,6 @@
 function getComputerChoice() {
     const randomNumber = Math.floor(Math.random() * 3) +1;
-    
+
     let result;
 
     switch (randomNumber) {
@@ -20,3 +20,11 @@ function getComputerChoice() {
     return result;
 }
 
+function getHumanChoice() {
+    let result = prompt('Enter your choice', '');
+
+    return result.toLowerCase();
+}
+
+let humanScore = 0;
+let computerScore = 0;
