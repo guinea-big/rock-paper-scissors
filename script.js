@@ -70,5 +70,15 @@ function playGame() {
         }
     }
 
-    
+    for (let i = 0; i < 5; i++) {
+        playRound();
+    }
+
+    if (computerScore > humanScore) {
+        console.log(`You lose! Score is ${humanScore} to ${computerScore}`);
+    } else if (humanScore > computerScore) {
+        console.log(`You win! Score is ${humanScore} to ${computerScore}`);
+    } else {
+        console.log(`Draw. Score is ${humanScore} to ${computerScore}`);
+    }
 }
